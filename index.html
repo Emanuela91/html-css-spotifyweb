@@ -9,50 +9,57 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- in alto fisso e trasparente -->
-    <header>
-        <a href="#">EFFETTUA L'UPGRADE</a>
-    </header>
+    <!-- contiene header, sidebar e main -->
+    <div id="container">
     
-    <!-- fisso a sinistra -->
-    <section id="sidebar">
-        <div id="menu">
-            <img src="" alt="spotify">
-            <div id="home"></div>
-            <div id="playlist"></div>    
-        </div>
+        <!-- in alto fisso e trasparente -->
+        <header>
+            <a href="#">EFFETTUA L'UPGRADE</a>
+        </header>
+        
+        <!-- fisso a sinistra -->
+        <section id="sidebar">
+            <div id="menu">
+                <img src="img/logo.svg" alt="spotify">
+                <div id="home">
+                    <!-- <span><img src="img/home.svg" alt="">Home</span> -->
+                </div>
+                <div id="playlist"></div>    
+            </div>
+            
+            <!-- fisso a sinistra in basso -->
+            <div id="install">
+                <span></span>
+                <hr>
+                <div>John Doe</div>
+            </div>
+        </section>
 
-        <!-- fisso a sinistra in basso -->
-        <div id="install">
-            <span></span>
-            <hr>
-            <div>John Doe</div>
-        </div>
-    </section>
+        <!-- parte centrale che scrolla -->
+        <main>
+            <!-- recently played -->
+            <section></section>
+            
+            <!-- creato per John -->
+            <section></section>
+            
+            <!-- artisti più popolari -->
+            <section></section>
 
-    <!-- parte centrale che scrolla -->
-    <main>
-        <!-- recently played -->
-        <section></section>
+        </main>
 
-        <!-- creato per John -->
-        <section></section>
-
-        <!-- artisti più popolari -->
-        <section></section>
-
-    </main>
-
+    </div>
+    
     <!-- fisso in basso -->
     <footer>
         <!-- nome brano -->
         <div></div>
-
+        
         <!-- player -->
         <section>
             <!-- play/stop -->
             <div></div>
-
+            
             <!-- tempo canzone -->
             <div></div>
         </section>
