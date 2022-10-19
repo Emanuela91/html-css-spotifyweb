@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    margin-left: 120px;
+    /* DEBUG */
+    position: fixed;
+    background-color: black;
+}
+
+#sidebar{
+    width: 120px;
+    height: 100vh;
+    /* DEBUG */
+    position: fixed;
+    background-color: blue;
+}
+
+main{
+    margin-left: 120px;
+    background-color: red;
+    overflow-y: auto;
+    /* DEBUG */
+    min-height: 500px;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* DEBUG */
+    background-color: aqua;
+
+}
