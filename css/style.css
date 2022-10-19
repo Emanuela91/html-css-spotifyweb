@@ -1,39 +1,52 @@
+/* regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#container{
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
 header{
     width: 100%;
     height: 80px;
-    margin-left: 120px;
-    /* DEBUG */
-    position: fixed;
-    background-color: black;
-}
-
-#sidebar{
-    width: 120px;
-    height: 100vh;
     /* DEBUG */
     position: fixed;
     background-color: blue;
 }
 
-main{
-    margin-left: 120px;
-    background-color: red;
-    overflow-y: auto;
+#sidebar{
+    width: 200px;
+    height: 100%;
     /* DEBUG */
-    min-height: 500px;
+    /* position: fixed; */
+    background-color: black
+}
+
+main{
+    width: 100%;
+    /* DEBUG */
+    background-color: red;
+    
 }
 
 footer{
     height: 80px;
     width: 100%;
-    position: fixed;
     /* DEBUG */
     background-color: aqua;
 
+}
+
+/* regole sidebar */
+#menu img{
+    width: 70%;
+    padding: 5px;
+}
+
+span img{
+    width: 30%;
 }
