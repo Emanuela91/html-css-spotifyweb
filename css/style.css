@@ -196,7 +196,7 @@ ul #sinister{
 
 
 /* tempo canzone */
-#songbar #time{
+.songbar #time{
     width: 200px;
     height: 2px;
     padding: 0;
@@ -204,20 +204,46 @@ ul #sinister{
 
 }
 
-#songbar #min{
+.songbar #min{
     width: 40px;
     height: 2px;
     padding: 0;
     background-color: #e9e0e0;
 }
 
-#songbar{
+.songbar{
     display: flex;
     color: #a7a7a7;
     font-size: 10px;
     align-items: center;
 }
 
-#songbar div{
+.songbar div{
     padding: 0 10px;
+}
+
+
+/* volume */
+#volume{
+    display: flex;
+
+}
+
+#vol-tot{
+    width: 100px;
+    height: 2px;
+    padding: 0;
+    background-color: #a7a7a7;
+}
+
+#vol{
+    width: 20px;
+    height: 2px;
+    padding: 0;
+    background-color: #e9e0e0;
+}
+
+.songbar i{
+    padding: 5px;
+    color: white;
 }
