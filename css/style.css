@@ -105,6 +105,7 @@ h4{
 /* parte di sidebar in basso fissa */
 #install{
     padding-left: 10px;
+    height: 65px;
 }
 
 #install span{
@@ -135,4 +136,88 @@ header a{
     float: right;
     margin-top: 10px;
     border-radius: 30px;
+}
+
+
+
+
+/* Footer nome e brano */
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#song{
+    display: flex;
+    align-items: center;
+}
+
+#album{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#song img{
+    width: 25px;
+    height: 25px;
+}
+
+#album li{
+    font-size: 10px;
+    padding-left: 3px; 
+    color: #a7a7a7;   
+}
+
+ul #sinister{
+    color: white;
+    font-size: 10px;
+}
+
+#song i{
+    color: #a7a7a7;
+    padding-right: 5px;
+}
+
+
+/* FOOTER player */
+#player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* play/stop */
+#play i{
+    color: white;
+    padding: 5px;
+}
+
+
+/* tempo canzone */
+#songbar #time{
+    width: 200px;
+    height: 2px;
+    padding: 0;
+    background-color: #a7a7a7;
+
+}
+
+#songbar #min{
+    width: 40px;
+    height: 2px;
+    padding: 0;
+    background-color: #e9e0e0;
+}
+
+#songbar{
+    display: flex;
+    color: #a7a7a7;
+    font-size: 10px;
+    align-items: center;
+}
+
+#songbar div{
+    padding: 0 10px;
 }
