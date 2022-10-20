@@ -21,9 +21,13 @@ header{
 #sidebar{
     width: 200px;
     height: 100%;
+    background-color: black;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* DEBUG */
     /* position: fixed; */
-    background-color: black
 }
 
 main{
@@ -42,11 +46,84 @@ footer{
 }
 
 /* regole sidebar */
+/* #menu{
+    padding-left: 10px;
+} */
+
 #menu img{
     width: 70%;
     padding: 5px;
+    padding-bottom: 20px;
 }
 
-span img{
-    width: 30%;
+ul{
+    list-style: none;
+}
+
+/* hover a lato  */
+#home li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.lateral{
+    border-left: 2px solid greenyellow;
+}
+
+.white{
+    color: white;
+}
+
+#white-play{
+    color: white;
+    padding-left: 10px;
+}
+
+#home img{
+    width: 15%;
+    padding: 0%;
+}
+
+a{
+    font-size: 10px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+h4{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+#home li i{
+    font-size: 25px;
+    padding-right: 5px;
+    color: white;
+}
+
+/* parte di sidebar in basso fissa */
+#install{
+    padding-left: 10px;
+}
+
+#install span{
+    display: flex;
+}
+
+#install img{
+    width: 15px;
+}
+
+#account{
+    background-color: #a7a7a7;
+    border-radius: 100%;
+    height: 15px;
+}
+
+hr{
+    margin: 10px 0;
 }

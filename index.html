@@ -12,31 +12,63 @@
     <!-- contiene header, sidebar e main -->
     <div id="container">
     
-        <!-- in alto fisso e trasparente -->
-        <header>
-            <a href="#">EFFETTUA L'UPGRADE</a>
-        </header>
         
         <!-- fisso a sinistra -->
         <section id="sidebar">
             <div id="menu">
                 <img src="img/logo.svg" alt="spotify">
                 <div id="home">
-                    <!-- <span><img src="img/home.svg" alt="">Home</span> -->
-                </div>
-                <div id="playlist"></div>    
+                    <ul>
+                        <li class="lateral"><img src="img/home.svg" alt="Home">
+                            <a class="white" href="#">Home</a>
+                        </li>
+                        <li><img src="img/search.svg" alt="Cerca">
+                            <a href="#">Cerca</a>
+                        </li>
+                        <li><img src="img/libreria.svg" alt="La tua libreria">
+                            <a href="#">La tua Libreria</a>
+                        </li>
+                    </ul>
+                    
+                    <h4 id="white-play">PLAYLIST</h4>
+
+                    <ul>
+                       <li id="crea">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <a href=""><h4>Crea Playlist</h4></a>
+                       </li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li>
+                       <li><a href="#"> Nome Playlist</a></li> 
+                    </ul>                
+                </div>                  
             </div>
             
             <!-- fisso a sinistra in basso -->
             <div id="install">
-                <span></span>
+                <span>
+                    <img src="img/download.svg" alt="download">
+                    <a href="#">Installa app</a>
+                </span>
                 <hr>
-                <div>John Doe</div>
+                <span>
+                    <img id="account" src="img/profile.svg" alt="account">
+                    <h4 class="white">John Doe</h4>
+                </span>
             </div>
         </section>
-
+        
         <!-- parte centrale che scrolla -->
         <main>
+            <!-- in alto fisso e trasparente -->
+            <header>
+                <a href="#">EFFETTUA L'UPGRADE</a>
+            </header>
+
             <!-- recently played -->
             <section></section>
             
