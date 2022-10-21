@@ -121,12 +121,33 @@ h4{
 
     #menu #small{
         display: block;
+        padding-left: 14px;
+        width: 50px;
     }
 
     #menu img{
         display: none;
     }
+
+    #home img{
+        display: block;
+        width: 70%;
+    }
+
+    #menu a{
+        display: none;
+    }
+
+    #white-play{
+        display: none;
+    }
+
+    #crea i{
+        display: none;
+    }
 }
+/* -------------------------------------------- */
+
 
 /* Sidebar parte in basso fissa */
 #install{
@@ -140,6 +161,7 @@ h4{
 
 #install img{
     width: 15px;
+    padding-bottom: 5px;
 }
 
 #account{
@@ -150,6 +172,18 @@ h4{
 
 hr{
     margin: 10px 0;
+}
+
+/* ------------------------------------------- */
+@media screen and (max-width: 500px) {
+    #install{
+        padding: 0%;
+        align-self: center;
+    }
+
+    #install a, h4, hr{
+        display: none;
+    }
 }
 
 
@@ -337,6 +371,33 @@ ul #sinister{
         width: 50px;
     }
 }
+
+@media screen and (max-width: 500px){
+    .songbar #time{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #album img{
+        display: none;
+    }
+
+    .songbar #time{
+        display: none;
+    }
+
+    .songbar .sec{
+        display: none;
+    }
+
+    .songbar #vol-tot{
+        display: none;
+    }
+}
+
+
+/* --------------------------------------------- */
 
 /* volume */
 #volume{
