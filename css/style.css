@@ -47,15 +47,17 @@ footer{
     background-color: #383636;
 }
 
-/* regole sidebar */
-/* #menu{
-    padding-left: 10px;
-} */
 
+/* Sidebar */
 #menu img{
     width: 70%;
     padding: 5px;
     padding-bottom: 20px;
+}
+
+#menu #small{
+    width: 70%;
+    display: none;
 }
 
 ul{
@@ -107,7 +109,26 @@ h4{
     color: white;
 }
 
-/* parte di sidebar in basso fissa */
+/* ---------------------------------------------- */
+@media screen and (max-width: 500px) {
+    main{
+        width: calc(100% - 60px);
+    } 
+
+    #sidebar{
+        width: 60px;
+    }
+
+    #menu #small{
+        display: block;
+    }
+
+    #menu img{
+        display: none;
+    }
+}
+
+/* Sidebar parte in basso fissa */
 #install{
     padding-left: 10px;
     height: 65px;
@@ -131,7 +152,8 @@ hr{
     margin: 10px 0;
 }
 
-/* parte centrale che scrolla */
+
+/* Parte centrale che scrolla */
 /* header */
 header a{
     color: white;
@@ -149,6 +171,7 @@ header a{
 #nav-main{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-bottom: 20px;
 }
 
@@ -208,6 +231,20 @@ header a{
     color: #a7a7a7;
     padding-left: 0;
 }
+
+/* ----------------------------------------- */
+@media screen and (max-width: 760px) {
+    .card{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: calc(100% / 2);
+    }    
+}
+/* -------------------------------------------- */
 
 /* Footer nome e brano */
 footer{
@@ -290,6 +327,16 @@ ul #sinister{
     padding: 0 10px;
 }
 
+/* --------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .songbar #time{
+        width: 150px;
+    }
+
+    #volume #vol-tot{
+        width: 50px;
+    }
+}
 
 /* volume */
 #volume{
