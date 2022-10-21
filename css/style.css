@@ -64,7 +64,6 @@ ul{
     list-style: none;
 }
 
-/* hover a lato  */
 #home li{
     display: flex;
     align-items: center;
@@ -72,6 +71,14 @@ ul{
     font-size: 10px;
     padding-left: 10px;
 }
+
+/* ------------------------------------------- */
+/* hover Sidebar home*/
+#home a:hover{
+    color: white;
+}
+/* ------------------------------------------- */
+
 
 .lateral{
     border-left: 2px solid greenyellow;
@@ -175,6 +182,12 @@ hr{
 }
 
 /* ------------------------------------------- */
+/* Hover Siderbar parte bassa */
+#install a:hover{
+    color: white
+}
+
+/* ------------------------------------------- */
 @media screen and (max-width: 500px) {
     #install{
         padding: 0%;
@@ -199,6 +212,12 @@ header a{
     border-radius: 30px;
 }
 
+/* -------------------------------------------- */
+/* Hover Upgrade Header */
+header a:hover{
+    transform: scale(1.1);
+}
+
 /* Main */
 /* navigazione Main */
 
@@ -212,6 +231,15 @@ header a{
 #nav-main li{
     padding: 0 5px;
 }
+
+
+/* -------------------------------------------- */
+/* Hover navigazione Main  */
+#nav-main a:hover{
+    color: white
+}
+/* -------------------------------------------- */
+
 
 #greenbar{
     border-bottom: 2px solid greenyellow;
