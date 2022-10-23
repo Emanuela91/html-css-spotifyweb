@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-#favicon{
-    fill: white;
-}
-
 #container{
     height: calc(100vh - 50px);    
     display: flex;
@@ -72,10 +68,12 @@ ul{
     padding-left: 10px;
 }
 
+
 /* ------------------------------------------- */
 /* hover Sidebar home*/
 #home a:hover{
     color: white;
+    cursor: pointer;
 }
 /* ------------------------------------------- */
 
@@ -181,12 +179,13 @@ hr{
     margin: 10px 0;
 }
 
+
 /* ------------------------------------------- */
 /* Hover Siderbar parte bassa */
 #install a:hover{
-    color: white
+    color: white;
+    cursor: pointer;
 }
-
 /* ------------------------------------------- */
 @media screen and (max-width: 500px) {
     #install{
@@ -198,6 +197,7 @@ hr{
         display: none;
     }
 }
+/* -------------------------------------------- */
 
 
 /* Parte centrale che scrolla */
@@ -212,11 +212,15 @@ header a{
     border-radius: 30px;
 }
 
+
 /* -------------------------------------------- */
 /* Hover Upgrade Header */
 header a:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
+/* --------------------------------------------- */
+
 
 /* Main */
 /* navigazione Main */
@@ -236,13 +240,17 @@ header a:hover{
 /* -------------------------------------------- */
 /* Hover navigazione Main  */
 #nav-main a:hover{
-    color: white
+    color: white;
+    cursor: pointer;    
 }
 /* -------------------------------------------- */
 
 
 #greenbar{
-    border-bottom: 2px solid greenyellow;
+    height: 2px;
+    width: 30%;
+    background-color: greenyellow;
+    margin-left: 24px;    
 }
 
 /* recently played */
@@ -275,11 +283,42 @@ header a:hover{
     width: calc(100% / 6);
     text-align: center; 
     padding: 5px 0;
-    
+    position: relative;
 }
 
 .card img{
     max-width: 65%
+}
+
+.card i{
+    position: absolute;
+    bottom: 106px;
+    right: 57px;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+.jhon i{
+    bottom: 65px;   
+}
+
+
+/* ------------------------------------------- */
+/* Hover Cards */
+.card img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card:hover i{
+    display: inline-block;
+}
+/* ------------------------------------------- */
+
+
+.card .lana{
+    border-radius: 100%;
 }
 
 .card h4{
@@ -294,6 +333,7 @@ header a:hover{
     padding-left: 0;
 }
 
+
 /* ----------------------------------------- */
 @media screen and (max-width: 760px) {
     .card{
@@ -307,6 +347,7 @@ header a:hover{
     }    
 }
 /* -------------------------------------------- */
+
 
 /* Footer nome e brano */
 footer{
@@ -347,6 +388,21 @@ ul #sinister{
 }
 
 
+/* -------------------------------------------- */
+/* Hover cartella e cuore */
+#album #underline:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#song .folder i:hover{
+    color: white;
+    cursor: pointer;
+}
+/* -------------------------------------------- */
+
+
 /* FOOTER player */
 #player{
     display: flex;
@@ -360,6 +416,15 @@ ul #sinister{
     color: white;
     padding: 5px;
 }
+
+
+/* ------------------------------------------- */
+/* Hover play */
+#play .fa-circle-play:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* -------------------------------------------- */
 
 
 /* tempo canzone */
@@ -376,7 +441,16 @@ ul #sinister{
     height: 2px;
     padding: 0;
     background-color: #e9e0e0;
+    position: absolute;
 }
+
+#min .fa-circle{
+    position: relative;
+    bottom: 9px;
+    left: 30px;
+    display: none;
+}
+
 
 .songbar{
     display: flex;
@@ -388,6 +462,7 @@ ul #sinister{
 .songbar div{
     padding: 0 10px;
 }
+
 
 /* --------------------------------------------- */
 @media screen and (max-width: 600px) {
@@ -423,9 +498,27 @@ ul #sinister{
         display: none;
     }
 }
-
-
 /* --------------------------------------------- */
+/* Hover barra del tempo e volume */
+#min:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#min:hover .fa-circle{
+    display: inline-block;
+}
+
+#vol:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#vol:hover .fa-circle{
+    display: inline-block;
+}
+/* --------------------------------------------- */
+
 
 /* volume */
 #volume{
@@ -444,6 +537,14 @@ ul #sinister{
     height: 2px;
     padding: 0;
     background-color: #e9e0e0;
+    position: absolute;
+}
+
+#vol .fa-circle{
+   position: relative;
+   bottom: 9px;
+   left: 13px;
+   display: none; 
 }
 
 .songbar i{
