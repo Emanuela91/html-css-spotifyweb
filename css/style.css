@@ -166,7 +166,6 @@ h4{
 
 #install img{
     width: 15px;
-    padding-bottom: 5px;
 }
 
 #account{
@@ -292,16 +291,23 @@ header a:hover{
 
 .card i{
     position: absolute;
-    bottom: 106px;
-    right: 57px;
     color: white;
     font-size: 25px;
     display: none;
 }
 
-.jhon i{
-    bottom: 65px;   
+.card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.jhon div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* ------------------------------------------- */
